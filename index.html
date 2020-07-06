@@ -13,8 +13,26 @@
     <script src="https://kit.fontawesome.com/dc1e0e23e2.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>Hello World!!!</h1>
+<body data-spy="scroll" data-target="#navbar">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#features">Features</a>
+            <a class="nav-item nav-link" href="#pricing">Pricing</a>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div id="features" style="height: 100vh;"></div>
+      <div id="pricing" style="height: 100vh;"></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

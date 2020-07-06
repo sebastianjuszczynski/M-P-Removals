@@ -4,11 +4,12 @@
   margin: 0;
 }
 
-h1 {
-  color: blue;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
