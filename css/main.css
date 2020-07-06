@@ -60,7 +60,7 @@ nav .active {
 
 header {
   height: 100vh;
-  background-image: url("../img/l.jpg");
+  background-image: url("./img/l.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
