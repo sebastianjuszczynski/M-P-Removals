@@ -90,7 +90,7 @@ header {
   height: 100vh;
   background-image: url("../img/l.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
