@@ -8,7 +8,6 @@ body
     position: relative
     font-family: 'Montserrat', sans-serif   
     background-color: #333
-
 .navbar__navigation-logo
     width: 70px
     margin-right: 10px
@@ -16,7 +15,7 @@ body
         width: 46px
 nav 
     text-transform: uppercase
-
+    transition:  background-color .6s
     a, i 
         color: #ffffff
         transition: color .3s
@@ -36,6 +35,9 @@ nav
         color: #039dff    
     .active
         color: #039dff
+.shadow-bg 
+    background-color: rgba(0, 0, 0, .8)
+   
 header
     height: 100vh
     background-image: url("../img/l.jpg")
@@ -43,6 +45,29 @@ header
     background-size: cover
     background-attachment: fixed
     position: relative
+
+
+    .header__text
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: #ffffff
+        text-transform: uppercase
+        text-align: center
+        z-index: 1
+
+    .header__span
+        color: #039dff
+    .header__title
+        font-size: 30px
+        font-weight: bold
+        margin-bottom: 20px
+    .header__paragraph
+        font-size: 16px    
+
+.fa-chevron-down
+    display: none
 header::after
     position: absolute
     content: ""
@@ -51,42 +76,8 @@ header::after
     right: 0
     bottom: 0
     background-color: rgba(0, 0 ,0 ,.7)
-.header__text
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    color: #ffffff
-    text-transform: uppercase
-    text-align: center
-    z-index: 1
-
-.header__span
-    color: #039dff
-.header__title
-    font-size: 30px
-    font-weight: bold
-    margin-bottom: 20px
-.header__paragraph
-    font-size: 16px    
-.navbar-nav
-    @media (max-width: 990px)
-        position: absolute 
-        background-color: black 
-        text-align: center
-        width: 100%
-        height: 100vh
-        margin-left: 0
-        
-.fa-chevron-down
-    visibility: hidden
-    position: absolute
-    left: 50%
-    bottom: 5%
-    transform: translate(-50%, -50%)
-    color: white
-    font-size: 30px  
-    z-index: 1 
 @media (min-width: 375px)
         .header__title
             font-size: 36px
+
+    

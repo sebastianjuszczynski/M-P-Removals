@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" media="screen and (min-width: 576px)" href="./css/small.css">
   <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/medium.css">
   <link rel="stylesheet" media="screen and (min-width: 992px)" href="./css/large.css">
@@ -34,20 +34,20 @@
         <a class="nav-item nav-link" href="#team">zespół</a>
         <a class="nav-item nav-link" href="#achievements">osiągnięcia</a>
         <a class="nav-item nav-link" href="#contact">kontakt</a>
-
-
       </div>
     </div>
   </nav>
   <header class="header">
     <div class="header__text">
-      <h1 class="header__title">Witajcie w M&P <span class="header__span">removals</span></h1>
-      <p class="header__paragraph">Z nami Twoja przeprowadzka będzie łatwiejsza!</p>
-      <a class="btn btn-outline-light" href="#aboutus">poznaj nas!</a>
+      <h1 class="header__title os-animation" data-animation="bounceInUp" data-delay=".2s">Witajcie w M&P <span class="header__span">removals</span></h1>
+      <p class="header__paragraph os-animation" data-animation="bounceInUp" data-delay=".5s">Z nami Twoja przeprowadzka będzie łatwiejsza!</p>
+      <a class="btn btn-outline-light os-animation" data-animation="bounceInUp" data-delay=".8s" href="#aboutus">poznaj nas!</a>
     </div>
-    <i class="fas fa-chevron-down"></i>
+    <a href="#aboutus"><i class="fas fa-chevron-down"></i></a>
   </header>
-
+ 
+  <div class="test" style="height:100vh"></div>
+  <div id="aboutus"></div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -60,6 +60,7 @@
     crossorigin="anonymous"></script>
   <script src="../js/animation.js"></script>
   <script src="../js/jquery.waypoints.min"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

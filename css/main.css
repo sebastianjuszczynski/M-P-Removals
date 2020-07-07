@@ -27,6 +27,8 @@ body {
 
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
 }
 
 nav a, nav i {
@@ -58,6 +60,10 @@ nav .active {
   color: #039dff;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 header {
   height: 100vh;
   background-image: url("../img/l.jpg");
@@ -67,17 +73,7 @@ header {
   position: relative;
 }
 
-header::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.header__text {
+header .header__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -89,41 +85,32 @@ header::after {
   z-index: 1;
 }
 
-.header__span {
+header .header__span {
   color: #039dff;
 }
 
-.header__title {
+header .header__title {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.header__paragraph {
+header .header__paragraph {
   font-size: 16px;
 }
 
-@media (max-width: 990px) {
-  .navbar-nav {
-    position: absolute;
-    background-color: black;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    margin-left: 0;
-  }
+.fa-chevron-down {
+  display: none;
 }
 
-.fa-chevron-down {
-  visibility: hidden;
+header::after {
   position: absolute;
-  left: 50%;
-  bottom: 5%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  font-size: 30px;
-  z-index: 1;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 375px) {
