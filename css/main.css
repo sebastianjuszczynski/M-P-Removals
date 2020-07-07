@@ -53,6 +53,8 @@ nav {
   text-transform: uppercase;
   -webkit-transition: background-color .6s;
   transition: background-color .6s;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
 nav a, nav i {
@@ -82,10 +84,6 @@ nav .navbar-brand-span:hover {
 
 nav .active {
   color: #0e70b7;
-}
-
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 header {
@@ -124,7 +122,7 @@ header .header__paragraph {
   font-size: 16px;
 }
 
-.fa-chevron-down {
+.arrow .fa-chevron-down {
   display: none;
 }
 
