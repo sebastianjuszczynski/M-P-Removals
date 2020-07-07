@@ -155,6 +155,7 @@ header::after {
 #aboutus .aboutus-hover {
   -webkit-transition: color .3s;
   transition: color .3s;
+  visibility: hidden;
 }
 
 #aboutus .aboutus-hover:hover {
