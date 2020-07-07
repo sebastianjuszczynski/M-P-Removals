@@ -1,3 +1,5 @@
+$blue-color: #0e70b7
+
 *, *::after, *::before
     box-sizing: border-box
     margin: 0
@@ -13,6 +15,23 @@ body
     margin-right: 10px
     @media (max-width: 380px)
         width: 46px
+.wrapper
+    width: 80%
+    margin: 0 auto
+
+    h2 
+        text-transform: uppercase
+        text-align: center
+.underline 
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $blue-color    
+.scroll-fix::before 
+    content: ""
+    display: block
+    height: 77px
+    margin-top: -66px
 nav 
     text-transform: uppercase
     transition:  background-color .6s
@@ -21,20 +40,20 @@ nav
         transition: color .3s
 
     a:hover 
-        color: #039dff  
+        color: $blue-color  
     
 
     .navbar-brand 
         font-weight: bold
-        color: #039dff
+        color: $blue-color
         
     .navbar-brand-span
         color: #fff  
         transition: color .3s
     .navbar-brand-span:hover 
-        color: #039dff    
+        color: $blue-color    
     .active
-        color: #039dff
+        color: $blue-color
 .shadow-bg 
     background-color: rgba(0, 0, 0, .8)
    
@@ -44,6 +63,7 @@ header
     background-position: center
     background-size: cover
     background-attachment: fixed
+    overflow: hidden
     position: relative
 
 
@@ -58,7 +78,7 @@ header
         z-index: 1
 
     .header__span
-        color: #039dff
+        color: $blue-color
     .header__title
         font-size: 30px
         font-weight: bold
@@ -76,8 +96,33 @@ header::after
     right: 0
     bottom: 0
     background-color: rgba(0, 0 ,0 ,.7)
+
+    
+#aboutus
+    i 
+        margin-top: 20px
+        font-size: 30px
+    h3 
+        font-size: 18px
+        text-transform: uppercase
+    p 
+        font-size: 14px   
+    .aboutus-hover 
+        transition: color .3s
+    .aboutus-hover:hover 
+        color: $blue-color
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 @media (min-width: 375px)
-        .header__title
-            font-size: 36px
+    .header__title
+        font-size: 36px
 
     

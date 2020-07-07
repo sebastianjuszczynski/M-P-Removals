@@ -25,6 +25,30 @@ body {
   }
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #0e70b7;
+}
+
+.scroll-fix::before {
+  content: "";
+  display: block;
+  height: 77px;
+  margin-top: -66px;
+}
+
 nav {
   text-transform: uppercase;
   -webkit-transition: background-color .6s;
@@ -38,12 +62,12 @@ nav a, nav i {
 }
 
 nav a:hover {
-  color: #039dff;
+  color: #0e70b7;
 }
 
 nav .navbar-brand {
   font-weight: bold;
-  color: #039dff;
+  color: #0e70b7;
 }
 
 nav .navbar-brand-span {
@@ -53,11 +77,11 @@ nav .navbar-brand-span {
 }
 
 nav .navbar-brand-span:hover {
-  color: #039dff;
+  color: #0e70b7;
 }
 
 nav .active {
-  color: #039dff;
+  color: #0e70b7;
 }
 
 .shadow-bg {
@@ -70,6 +94,7 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
   position: relative;
 }
 
@@ -86,7 +111,7 @@ header .header__text {
 }
 
 header .header__span {
-  color: #039dff;
+  color: #0e70b7;
 }
 
 header .header__title {
@@ -111,6 +136,29 @@ header::after {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+#aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#aboutus h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#aboutus p {
+  font-size: 14px;
+}
+
+#aboutus .aboutus-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#aboutus .aboutus-hover:hover {
+  color: #0e70b7;
 }
 
 @media (min-width: 375px) {
