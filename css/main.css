@@ -371,6 +371,41 @@ header::after {
   font-size: 14px;
 }
 
+#achievements .jumbotron h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#achievements .jumbotron .achievement {
+  text-align: center;
+}
+
+#achievements .jumbotron .achievements-list {
+  padding: 20px 0;
+}
+
+#achievements .jumbotron i {
+  padding: 10px;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 0 0 5px black;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#achievements .jumbotron i:hover {
+  color: #0e70b7;
+}
+
+#achievements .jumbotron .achievements-number {
+  font-size: 22px;
+}
+
+#achievements .jumbotron .achievements-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 375px) {
   .header__title {
     font-size: 36px;
