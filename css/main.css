@@ -246,6 +246,11 @@ header::after {
   padding-bottom: 10px;
 }
 
+#prices h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   .header__title {
     font-size: 36px;
