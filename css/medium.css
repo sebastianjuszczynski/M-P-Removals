@@ -13,4 +13,8 @@
 #prices .price-info {
   font-size: 23px;
 }
+
+#comments .card-body {
+  height: 150px;
+}
 /*# sourceMappingURL=medium.css.map */
