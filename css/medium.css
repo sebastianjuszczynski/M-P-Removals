@@ -5,4 +5,12 @@
 .header__paragraph {
   font-size: 24px;
 }
+
+#prices .price-wrap {
+  width: 90%;
+}
+
+#prices .price-info {
+  font-size: 23px;
+}
 /*# sourceMappingURL=medium.css.map */

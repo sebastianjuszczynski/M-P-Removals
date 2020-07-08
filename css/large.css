@@ -12,15 +12,31 @@
           animation: bounce 1.6s infinite;
 }
 
+#prices .price-wrap {
+  width: 80%;
+}
+
 @media (min-width: 1200px) {
   #aboutus-hero .jumbotron {
     padding: 100px 0;
+  }
+  #prices .price-wrap {
+    width: 85%;
   }
 }
 
 @media (min-width: 1400px) {
   #aboutus-hero .jumbotron {
     padding: 120px 0;
+  }
+}
+
+@media (min-width: 2000px) {
+  #aboutus-hero .jumbotron {
+    padding: 100px 0;
+  }
+  #prices .price-wrap {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=large.css.map */

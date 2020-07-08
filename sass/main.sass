@@ -34,12 +34,12 @@ body
     height: 77px
     margin-top: -77px
 .visibility 
-     visibility: hidden
+    visibility: hidden
 .jumbotron 
     margin: 0
 nav 
     text-transform: uppercase
-    transition:  background-color .6s
+    transition: background-color .6s
     background-color: rgba(0, 0, 0, .8)
     text-align: center
     a, i 
@@ -171,13 +171,41 @@ header::after
     .carousel-indicators 
         padding-bottom: 10px
 #prices 
+    .jumbotron 
+        background-color: #f9f9f9
     h2 
         text-transform: uppercase
         text-align: center    
+    .price-wrap
+        max-width: 1920px 
+        width: 95%
+        margin: 0 auto 
+    .price-box 
+        margin: 20px 10px 
+        padding: 30px
+        background-color: #fff 
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .6)
+        transition: transform .3s
+        h3 
+            color: $blue-color 
+            text-transform: uppercase 
+        span 
+            font-weight: bold
+        i 
+            padding: 0 5px 
+            font-size: 23px
+        button 
+            padding: 10px 20px
+            text-transform: uppercase 
+        .price 
+            font-size: 30px 
+            font-weight: bold
+    .price-box:hover 
+        transform: scale(1.05)
+    
+    .price-text 
+        margin-top: 30px 
 
-    
-    
-    
     
     
 @media (min-width: 375px)
@@ -194,6 +222,6 @@ header::after
             p 
                 font-size: 18px 
 @media (min-width: 414px) 
-        #aboutus-hero 
-            .jumbotron 
-                padding: 80px 0
+    #aboutus-hero
+        .jumbotron
+            padding: 80px 0
