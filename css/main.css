@@ -208,6 +208,50 @@ header::after {
   margin: 10px 0;
 }
 
+#jobs h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#jobs .carousel-item {
+  position: relative;
+  height: 400px;
+}
+
+#jobs .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#jobs .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#jobs .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+#jobs .card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#jobs .card-deck .card {
+  margin-top: 20px;
+}
+
 @media (min-width: 375px) {
   .header__title {
     font-size: 36px;
