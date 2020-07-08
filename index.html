@@ -9,6 +9,8 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.js" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" media="screen and (min-width: 576px)" href="./css/small.css">
   <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/medium.css">
@@ -211,7 +213,7 @@
             </div>
           </div>
           <div class="col-md-6 col-xl-4">
-            <div class="price-box">
+            <div class="price-box bg-dark text-light">
               <h3>Big clearance</h3>
               <hr>
               <p><span>Number of vans:</span> <i class="fas fa-truck"></i> <i class="fas fa-truck-moving"></i></p>
@@ -243,7 +245,75 @@
       </div>
 
     </section>
-
+    <section id="comments" class="scroll-fix">
+      <div class="jumbotron jumbotron-fluid">
+        <h2 class="os-animation visibility" data-animation="bounceInRight" data-delay="0.1s">comments</h2>
+        <div class="underline os-animation visibility" data-animation="bounceInLeft" data-delay="0.1s"></div>
+        <div class="card-deck">
+         
+          <div class="card">
+            <img src="./img/comment1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comment 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum iusto dolores? Porro laudantium sit nulla eos. Commodi illo ipsa velit est ipsam suscipit quam eveniet reiciendis quasi mollitia. Harum.</p>
+            </div>
+            <div class="card-footer row justify-content-around">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/comment2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comment 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum iusto dolores? Porro laudantium sit nulla eos. Commodi illo ipsa velit est ipsam suscipit quam eveniet reiciendis quasi mollitia. Harum.</p>
+            </div>
+            <div class="card-footer row justify-content-around">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/comment3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comment 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum iusto dolores? Porro laudantium sit nulla eos. Commodi illo ipsa velit est ipsam suscipit quam eveniet reiciendis quasi mollitia. Harum.</p>
+            </div>
+            <div class="card-footer row justify-content-around">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/comment4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comment 4</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum iusto dolores? Porro laudantium sit nulla eos. Commodi illo ipsa velit est ipsam suscipit quam eveniet reiciendis quasi mollitia. Harum.</p>
+            </div>
+            <div class="card-footer row justify-content-around">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/comment5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comment 5</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum iusto dolores? Porro laudantium sit nulla eos. Commodi illo ipsa velit est ipsam suscipit quam eveniet reiciendis quasi mollitia. Harum.</p>
+            </div>
+            <div class="card-footer row justify-content-around">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
   <div class="test" style="height: 100vh;"></div>
@@ -260,6 +330,7 @@
     crossorigin="anonymous"></script>
   <script src="./js/animation.js"></script>
   <script src="./js/jquery.waypoints.min"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

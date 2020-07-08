@@ -1,6 +1,6 @@
 
 
-    $(document).ready(function () {
+    
         $(document).click(function (event) {
             var clickover = $(event.target);
             var _opened = $(".navbar-collapse").hasClass("show");
@@ -8,4 +8,10 @@
                 $(".navbar-toggler").click();
             }
         });
+
+    
+            $('.your-class').slick({
+              setting-name: setting-value
+            });
+          
     });

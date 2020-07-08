@@ -306,6 +306,11 @@ header::after {
   margin-top: 30px;
 }
 
+#comments h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   .header__title {
     font-size: 36px;
