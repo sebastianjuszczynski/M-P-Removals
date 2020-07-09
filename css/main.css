@@ -472,6 +472,16 @@ header::after {
   color: #0e70b7;
 }
 
+footer {
+  color: #fff;
+}
+
+footer p {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 @media (min-width: 375px) {
   .header__title {
     font-size: 36px;
