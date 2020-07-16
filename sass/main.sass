@@ -10,7 +10,7 @@ html
 body 
     position: relative
     font-family: 'Montserrat', sans-serif   
-    background-color: black
+    
      
 h2 
     text-transform: uppercase
@@ -211,6 +211,28 @@ header::after
     
     .price-text 
         margin-top: 30px 
+#gallery 
+    max-width: 1200px
+    margin: 0 auto
+    background-color: #ddd
+    overflow: hidden
+    padding: 20px
+    .gallery__items 
+        display: grid 
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+        justify-content: center
+        padding: 20px
+        img 
+            width: 80%
+            height: 30vh
+            object-fit: cover 
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .6)
+            transform: scale(1)
+            transition: all 0.3s
+        img:hover 
+            box-shadow: 5px 5px 5px rgba(14,112,183, .6)
+            transform: scale(0.99)
 #comments 
     overflow: hidden
     .jumbotron 
@@ -308,9 +330,10 @@ header::after
                 a:hover 
                     color: $blue-color 
 footer 
+    background-color: black
     color: #fff 
     p 
-        padding: 10px
+        padding: 5px
         text-align: center
         margin-bottom: 0
         
@@ -344,3 +367,10 @@ footer
         .jumbotron  
             h2 
                 margin-bottom: -150px
+    #gallery 
+        .gallery__items 
+            grid-template-columns: repeat(2, 1fr)
+@media (max-width: 590px)            
+    #gallery 
+        .gallery__items 
+            grid-template-columns: repeat(1, 1fr)

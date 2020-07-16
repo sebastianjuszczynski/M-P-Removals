@@ -12,7 +12,6 @@ html {
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
 }
 
 h2 {
@@ -312,6 +311,46 @@ header::after {
   margin-top: 30px;
 }
 
+#gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ddd;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#gallery .gallery__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+#gallery .gallery__items img {
+  width: 80%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#gallery .gallery__items img:hover {
+  -webkit-box-shadow: 5px 5px 5px rgba(14, 112, 183, 0.6);
+          box-shadow: 5px 5px 5px rgba(14, 112, 183, 0.6);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
 #comments {
   overflow: hidden;
 }
@@ -472,11 +511,12 @@ header::after {
 }
 
 footer {
+  background-color: black;
   color: #fff;
 }
 
 footer p {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   margin-bottom: 0;
 }
@@ -515,6 +555,17 @@ footer p {
 @media (max-width: 767px) {
   #jobs .jumbotron h2 {
     margin-bottom: -150px;
+  }
+  #gallery .gallery__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 590px) {
+  #gallery .gallery__items {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
