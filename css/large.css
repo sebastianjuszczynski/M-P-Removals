@@ -12,6 +12,10 @@
           animation: bounce 1.6s infinite;
 }
 
+#jobs .jumbotron h2 {
+  margin-bottom: 0;
+}
+
 #prices .price-wrap {
   width: 80%;
 }

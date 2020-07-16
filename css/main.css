@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -12,6 +13,11 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: black;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .map {
@@ -36,11 +42,6 @@ body {
   max-width: 1920px;
   width: 80%;
   margin: 0 auto;
-}
-
-.wrapper h2 {
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .underline {
@@ -104,7 +105,6 @@ nav .active {
 
 header {
   height: 100vh;
-  width: 100%;
   background-image: url("../img/l.jpg");
   background-position: center;
   background-size: cover;
@@ -216,14 +216,13 @@ header::after {
   margin: 10px 0;
 }
 
-#jobs h2 {
-  text-transform: uppercase;
-  text-align: center;
+#jobs {
+  overflow: hidden;
 }
 
 #jobs .carousel-item {
   position: relative;
-  height: 500px;
+  height: 600px;
 }
 
 #jobs .carousel-item img {
@@ -238,6 +237,7 @@ header::after {
   position: absolute;
   left: 0;
   right: 0;
+  padding: 40px 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -253,13 +253,12 @@ header::after {
   padding-bottom: 10px;
 }
 
-#prices .jumbotron {
-  background-color: #f9f9f9;
+#prices {
+  overflow: hidden;
 }
 
-#prices h2 {
-  text-transform: uppercase;
-  text-align: center;
+#prices .jumbotron {
+  background-color: #f9f9f9;
 }
 
 #prices .price-wrap {
@@ -313,6 +312,10 @@ header::after {
   margin-top: 30px;
 }
 
+#comments {
+  overflow: hidden;
+}
+
 #comments .jumbotron {
   position: relative;
   background-image: url("../img/comment-shadow.jpg");
@@ -346,8 +349,6 @@ header::after {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 #comments .card i {
@@ -378,9 +379,8 @@ header::after {
   font-size: 14px;
 }
 
-#achievements .jumbotron h2 {
-  text-align: center;
-  text-transform: uppercase;
+#achievements {
+  overflow: hidden;
 }
 
 #achievements .jumbotron .achievement {
@@ -413,6 +413,10 @@ header::after {
   text-transform: uppercase;
 }
 
+#contact {
+  overflow: hidden;
+}
+
 #contact .jumbotron {
   position: relative;
   background-image: url("../img/contact.jpg");
@@ -421,11 +425,6 @@ header::after {
   background-attachment: fixed;
   z-index: 0;
   color: #fff;
-}
-
-#contact .jumbotron h2 {
-  text-transform: uppercase;
-  text-align: center;
 }
 
 #contact .contact-shadow {
@@ -510,6 +509,12 @@ footer p {
 @media (min-width: 500px) {
   #comments .card-body {
     height: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  #jobs .jumbotron h2 {
+    margin-bottom: -150px;
   }
 }
 /*# sourceMappingURL=main.css.map */
